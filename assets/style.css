@@ -1,0 +1,13 @@
+.lined {
+    font-size: 4rem;
+    width:1000px !important;
+}
+.lined::before,
+.lined::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid;
+    width: 9rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
