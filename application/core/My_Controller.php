@@ -11,6 +11,7 @@ class My_Controller extends CI_Controller{
     {
         parent::__construct();
         $this->data = array();
+
     }
 
 

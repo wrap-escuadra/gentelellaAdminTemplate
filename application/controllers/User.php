@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: rafaelescuadra
@@ -9,6 +10,8 @@ Class User extends Admin_Controller{
     function __construct()
     {
         parent::__construct();
+        $this->load->library('pagination');
+        $this->load->model('user_model');
 
     }
 
@@ -20,6 +23,7 @@ Class User extends Admin_Controller{
 
     public function add()
     {
+        $this->data['roles'] = $this->user_model->getRoles();
         $this->render('user/add');
     }
 }

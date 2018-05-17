@@ -29,7 +29,13 @@
 
     <!-- Custom Theme Style -->
     <link href="<?=base_url('build/css/custom.min.css');?>" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="<?=base_url('vendors/jquery/dist/jquery.min.js');?>"></script>
+    <!-- Bootstrap -->
+    <script src="<?=base_url('vendors/bootstrap/dist/js/bootstrap.min.js');?>"></script>
     <link rel="stylesheet" href="<?=base_url('assets/style.css?'.time());?>">
+
+
 </head>
 
 <body class="nav-md">
@@ -295,10 +301,7 @@
     </div>
 </div>
 
-<!-- jQuery -->
-<script src="<?=base_url('vendors/jquery/dist/jquery.min.js');?>"></script>
-<!-- Bootstrap -->
-<script src="<?=base_url('vendors/bootstrap/dist/js/bootstrap.min.js');?>"></script>
+
 <!-- FastClick -->
 <script src="<?=base_url('vendors/fastclick/lib/fastclick.js');?>"></script>
 <!-- NProgress -->
