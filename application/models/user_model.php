@@ -2,7 +2,7 @@
 
 class User_model extends CI_Model {
 
-    public function getRoles($role_id=null)
+    function getRoles($role_id=null)
     {
         if($role_id!=null)
         {
@@ -10,6 +10,15 @@ class User_model extends CI_Model {
         }
         $q = $this->db->get('lu_roles');
         return $q->result();
+    }
+
+    function getUsers($user_id=null){
+        if($user_id != null){
+            $this->db->where('user_id',$user_id);
+            return $this->db->get('mt_users')->row();
+        }
+        return $this->db->get('mt_users')->result();
+
     }
 
     function addUser($post)

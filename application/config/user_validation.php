@@ -39,13 +39,13 @@ $config['add'] = array(
     array(
         'field' => 'password',
         'label' => 'password',
-        'rules' => 'required|max_length[70]',
+        'rules' => 'required|max_length[20]',
         'type' => 'input',
     ),
     array(
         'field' => 'repassword',
-        'label' => 'first name',
-        'rules' => 'required|max_length[70]|matches[password]',
+        'label' => 'confirm password',
+        'rules' => 'required|max_length[20]|matches[password]',
         'type' => 'input',
     ),
 

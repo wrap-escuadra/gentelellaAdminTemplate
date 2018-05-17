@@ -19,6 +19,7 @@ Class User extends Admin_Controller{
 
     public function index()
     {
+        $this->user_model->getUsers();
         $this->render('user/index');
     }
 
