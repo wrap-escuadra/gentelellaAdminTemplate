@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS lu_roles(
+  role_id smallint AUTO_INCREMENT PRIMARY KEY,
+  role_code VARCHAR(20) NOT NULL,
+  role_desc VARCHAR (150),
+  last_update timestamp  DEFAULT CURRENT_TIMESTAMP ON UPDATE  CURRENT_TIMESTAMP
+
+)ENGINE=InnoDB

@@ -29,11 +29,24 @@
 
     <!-- Custom Theme Style -->
     <link href="<?=base_url('build/css/custom.min.css');?>" rel="stylesheet">
-    <link rel="stylesheet" href="<?=base_url('assets/style.css?'.time());?>">
+    <link rel="stylesheet" href="<?=base_url('assets/style.css');?>" >
+    <!-- jQuery -->
+    <script src="<?=base_url('vendors/jquery/dist/jquery.min.js');?>"></script>
+    <!-- Bootstrap -->
+    <script src="<?=base_url('vendors/bootstrap/dist/js/bootstrap.min.js');?>"></script>
+
+    <script>
+        base_url = '<?=base_url();?>';
+    </script>
+
+
 </head>
 
 <body class="nav-md">
+<div id="overlay"></div>
+<div id="spinner"></div>
 <div class="container body">
+
     <div class="main_container">
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
@@ -45,7 +58,7 @@
 
                 <!-- menu profile quick info -->
                 <div class="profile clearfix">
-                    <div class="profile_pic">ddd
+                    <div class="profile_pic">
                         <img src="<?=base_url('vendors/images/img.jpg');?>" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
@@ -295,10 +308,7 @@
     </div>
 </div>
 
-<!-- jQuery -->
-<script src="<?=base_url('vendors/jquery/dist/jquery.min.js');?>"></script>
-<!-- Bootstrap -->
-<script src="<?=base_url('vendors/bootstrap/dist/js/bootstrap.min.js');?>"></script>
+
 <!-- FastClick -->
 <script src="<?=base_url('vendors/fastclick/lib/fastclick.js');?>"></script>
 <!-- NProgress -->
